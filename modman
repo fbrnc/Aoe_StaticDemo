@@ -1,0 +1,3 @@
+code/								htdocs/app/code/local/Aoe/StaticDemo/
+frontend/layout/aoestaticdemo/		htdocs/app/design/frontend/base/default/layout/aoestaticdemo/
+Aoe_StaticDemo.xml					htdocs/app/etc/modules/Aoe_StaticDemo.xml
