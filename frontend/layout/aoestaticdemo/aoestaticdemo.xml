@@ -1,5 +1,12 @@
 <layout version="0.1.0">
-	<default>
+
+	<!--
+	This layout updates will only be processed of Aoe_Static detects a cacheable controller action (from configuration).
+	If you want toe placeholders replaced in any case (also for not cached pages) change the following tag to <default>
+
+	In case you want apply layout updates only for uncached pages you can use the layout handle <aoestatic_notcacheable>
+	-->
+	<aoestatic_cacheable>
 
 		<reference name="header">
 
@@ -9,12 +16,12 @@
 				<action method="setText"><param><![CDATA[
 					<div id="topLinks" class="placeholder" rel="top.links">
 						<ul class="links">
-                        	<li class="first"><a title="My Account" href="/customer/account/">My Account</a></li>
-                            <li><a title="My Wishlist" href="/wishlist/">My Wishlist</a></li>
-                            <li><a class="top-link-cart" title="My Cart" href="/checkout/cart/">My Cart</a></li>
-                            <li><a class="top-link-checkout" title="Checkout" href="/checkout/">Checkout</a></li>
-                            <li class=" last"><a title="Log In" href="/customer/account/login/">Log In</a></li>
-            			</ul>
+							<li class="first"><a title="My Account" href="/customer/account/">My Account</a></li>
+							<li><a title="My Wishlist" href="/wishlist/">My Wishlist</a></li>
+							<li><a class="top-link-cart" title="My Cart" href="/checkout/cart/">My Cart</a></li>
+							<li><a class="top-link-checkout" title="Checkout" href="/checkout/">Checkout</a></li>
+							<li class=" last"><a title="Log In" href="/customer/account/login/">Log In</a></li>
+						</ul>
 					</div>
 				]]></param></action>
 			</block>
@@ -29,7 +36,7 @@
 				<action method="setText"><param><![CDATA[
 					<div id="cart_sidebar" class="placeholder" rel="cart_sidebar">
 						<div class="block block-cart">
-					        <div class="block-title"><strong><span>My Cart</span></strong></div>
+							<div class="block-title"><strong><span>My Cart</span></strong></div>
 						</div>
 					</div>
 				]]></param></action>
@@ -41,7 +48,7 @@
 				<action method="setText"><param><![CDATA[
 					<div id="right_reports_product_viewed" class="placeholder" rel="right.reports.product.viewed">
 						<div class="block block-list block-viewed">
-	    					<div class="block-title"><strong><span>Recently Viewed Products</span></strong></div>
+							<div class="block-title"><strong><span>Recently Viewed Products</span></strong></div>
 						</div>
 					</div>
 				]]></param></action>
@@ -57,5 +64,6 @@
 
 		</reference>
 
-	</default>
+	</aoestatic_cacheable>
+
 </layout>
